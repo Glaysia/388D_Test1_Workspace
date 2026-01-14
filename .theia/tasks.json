@@ -1,0 +1,92 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build CPU1_RAM (RAM boot)",
+      "type": "shell",
+      "command": "/opt/ti/ccs2040/ccs/utils/bin/gmake",
+      "args": [
+        "-C",
+        "${workspaceFolder}/adc_ex1_epwm_input/CPU1_RAM",
+        "-f",
+        "makefile",
+        "all",
+        "-O"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build CPU2_RAM (RAM boot)",
+      "type": "shell",
+      "command": "/opt/ti/ccs2040/ccs/utils/bin/gmake",
+      "args": [
+        "-C",
+        "${workspaceFolder}/adc_ex1_epwm_input_cpu2/CPU2_RAM",
+        "-f",
+        "makefile",
+        "all",
+        "-O"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Build all (CPU1_RAM + CPU2_RAM)",
+      "type": "shell",
+      "command": "/bin/true",
+      "dependsOn": [
+        "Build CPU1_RAM (RAM boot)",
+        "Build CPU2_RAM (RAM boot)"
+      ],
+      "dependsOrder": "sequence",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean CPU1_RAM (RAM boot)",
+      "type": "shell",
+      "command": "/opt/ti/ccs2040/ccs/utils/bin/gmake",
+      "args": [
+        "-C",
+        "${workspaceFolder}/adc_ex1_epwm_input/CPU1_RAM",
+        "-f",
+        "makefile",
+        "clean",
+        "-O"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean CPU2_RAM (RAM boot)",
+      "type": "shell",
+      "command": "/opt/ti/ccs2040/ccs/utils/bin/gmake",
+      "args": [
+        "-C",
+        "${workspaceFolder}/adc_ex1_epwm_input_cpu2/CPU2_RAM",
+        "-f",
+        "makefile",
+        "clean",
+        "-O"
+      ],
+      "group": "build",
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean all (CPU1_RAM + CPU2_RAM)",
+      "type": "shell",
+      "command": "/bin/true",
+      "dependsOn": [
+        "Clean CPU1_RAM (RAM boot)",
+        "Clean CPU2_RAM (RAM boot)"
+      ],
+      "dependsOrder": "sequence",
+      "group": "build",
+      "problemMatcher": []
+    }
+  ]
+}
