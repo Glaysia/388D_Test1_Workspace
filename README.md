@@ -26,5 +26,10 @@
 - C2000Ware: `/opt/ti/c2000/C2000Ware_6_00_01_00`
 - TI CGT C2000 컴파일러: `/opt/ti/ccs2040/ccs/tools/compiler/ti-cgt-c2000_22.6.3.LTS/bin/cl2000`
 
+Windows 기본 설치 경로(태스크 기준):
+- CCS: `C:\\ti\\ccs2040`
+- C2000Ware: `C:\\ti\\c2000\\C2000Ware_6_00_01_00`
+- TI CGT C2000 컴파일러: `C:\\ti\\ccs2040\\ccs\\tools\\compiler\\ti-cgt-c2000_22.6.3.LTS\\bin\\cl2000.exe`
+
 ## IntelliSense/clangd
 CCS는 빌드 후 `CPU*_RAM/.clangd/` 아래에 `compile_commands.json`을 생성합니다. 에디터에서 해당 파일을 지정하면 include 경로와 define을 올바르게 인식합니다.

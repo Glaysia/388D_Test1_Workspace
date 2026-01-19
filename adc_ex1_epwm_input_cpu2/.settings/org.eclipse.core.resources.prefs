@@ -1,4 +1,15 @@
 eclipse.preferences.version=1
+encoding//CPU2_FLASH/core/asm/subdir_rules.mk=UTF-8
+encoding//CPU2_FLASH/core/asm/subdir_vars.mk=UTF-8
+encoding//CPU2_FLASH/core/c/subdir_rules.mk=UTF-8
+encoding//CPU2_FLASH/core/c/subdir_vars.mk=UTF-8
+encoding//CPU2_FLASH/core/cc/subdir_rules.mk=UTF-8
+encoding//CPU2_FLASH/core/cc/subdir_vars.mk=UTF-8
+encoding//CPU2_FLASH/makefile=UTF-8
+encoding//CPU2_FLASH/objects.mk=UTF-8
+encoding//CPU2_FLASH/sources.mk=UTF-8
+encoding//CPU2_FLASH/subdir_rules.mk=UTF-8
+encoding//CPU2_FLASH/subdir_vars.mk=UTF-8
 encoding//CPU2_RAM/core/asm/subdir_rules.mk=UTF-8
 encoding//CPU2_RAM/core/asm/subdir_vars.mk=UTF-8
 encoding//CPU2_RAM/core/c/subdir_rules.mk=UTF-8
